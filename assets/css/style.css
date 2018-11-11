@@ -1,0 +1,32 @@
+
+/* Header Class */
+.header {
+    color: #4aaaa5;
+}
+
+/* Paragraph Text Class */
+.ptext {
+    color: #777777;
+}
+
+/* Main Header ID */
+#h1 {
+    background-color: #ffffff;
+    color: white;
+    float: left;
+    clear: right;
+}
+
+/* Headshot Photo ID */
+#headshot {
+    float: left;
+    margin: 30px
+}
+
+/* Footer ID */
+#stickyfoot {
+    border-top: 8px solid #4aaaa5;
+    padding: 20px 100px 20px 100px;
+    background-color: slategrey;
+    text-align: center;
+}
