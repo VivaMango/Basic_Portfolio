@@ -1,7 +1,56 @@
+/* Full HTML Tag Call */
+html {
+    height: 100%;
+}
 
-/* Header Class */
-.header {
-    color: #4aaaa5;
+/* Body Tag Call */
+body {
+    display: flex;
+    overflow: hidden; /* makes body non-scrollable */
+    margin: 0px; /* removes default style */
+    height: 100%;
+    min-height: 100%;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+/* <Header> Class */
+.tagheader {
+    flex: 0 0 auto;
+    background-color: white; 
+    border-bottom: 5px;
+    border-color: #cccccc
+}
+
+/* Header Name ID */
+#myname {
+    background-color: #4aaaa5;
+    color: white;
+    float: left;
+    padding: 30px;
+}
+
+
+/* Link to portfolio.html ID */
+#linkportfolio {
+    float: right;
+    width: 10%;
+    padding: 30px;
+    color: #777777;
+}
+
+/* Link to contact.html ID */
+#linkcontact {
+    float: right;
+    width: 10%;
+    padding: 30px;
+    color: #777777;
+}
+
+/* Main Class */
+.main {
+    flex: 1 0 auto;
+    margin: 20px 80px 60px 80px;
 }
 
 /* Paragraph Text Class */
@@ -13,20 +62,23 @@
 #h1 {
     background-color: #ffffff;
     color: white;
-    float: left;
-    clear: right;
 }
 
 /* Headshot Photo ID */
 #headshot {
     float: left;
-    margin: 30px
+    margin: 30px;
+    height: 15%;
+    width: 15%;
 }
 
-/* Footer ID */
-#stickyfoot {
+/* Sticky Footer Class */
+.footer {
     border-top: 8px solid #4aaaa5;
     padding: 20px 100px 20px 100px;
     background-color: slategrey;
     text-align: center;
+    flex: none;
+    flex-shrink: 0;
+    color: white;
 }
