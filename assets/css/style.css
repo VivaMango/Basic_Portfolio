@@ -9,10 +9,11 @@ html {
 /* Body Tag Call */
 body {
     display: flex;
-    overflow: hidden; /* makes body non-scrollable DO NOT FORGET TO MAKE CHILDREN SCROLLABLE */
-    margin: 0; /* removes default style */
+    overflow: auto; /* makes body non-scrollable DO NOT FORGET TO MAKE CHILDREN SCROLLABLE */
+    margin: 0px; /* removes default style */
     height: 100%;
     min-height: 100%;
+    background-color: #4aaaa5;
     flex-direction: column;
     flex-shrink: 0;
 }
@@ -20,10 +21,11 @@ body {
 /* <Header> Class */
 .tagheader {
     flex: 0 0 auto;
-    background-color: white; 
     margin: 0px;
-    border-bottom: 5px;
-    border-color: #cccccc
+    background-color: white;
+    border-style: solid;
+    border-color: orange;
+    border-width: 0px 0px 3px 0px;
 }
 
 /* Nav Link Class */
@@ -37,6 +39,7 @@ body {
     float: right;
     position: relative;
     margin-inline-end: 10%;
+    margin-bottom: 0;
 }
 
 /* NavActive Class */
@@ -46,6 +49,13 @@ body {
     padding: 30px;
     float: right;
     font-weight: 900;
+    margin-bottom: 0;
+}
+
+/* Nav Property ID */
+#navbarproperties {
+    background-color: white;
+    margin: 0px;
 }
 
 /* Header Name ID */
@@ -55,7 +65,8 @@ body {
     float: left;
     padding: 30px;
     margin-inline-start: 10%;
-    font-weight: 1800;
+    font-weight: 300%;
+    margin-bottom: 0;
 }
 
 /* Link to portfolio.html ID */
@@ -78,6 +89,9 @@ body {
 .main {
     flex: 1 0 auto;
     margin: 20px 80px 60px 80px;
+    padding: 30px;
+    background-color: white;
+    
 }
 
 /* Paragraph Text Class */
@@ -85,19 +99,21 @@ body {
     color: #777777;
 }
 
-/* Clearfix */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 /* Main Header ID */
-#h1 {
+#header {
     background-color: #ffffff;
     color: white;
     float: left;
     position: relative;
+}
+
+/* H2 ID */
+.header2 {
+    border-style: solid;
+    border-color: orange;
+    color: #4aaaa5;
+    padding: 0px 0px 20px 0px;
+    border-width: 0px 0px 3px 0px;
 }
 
 /* Headshot Photo ID */
@@ -117,4 +133,5 @@ body {
     flex: none;
     flex-shrink: 0;
     color: white;
+    margin-bottom: 0;
 }
