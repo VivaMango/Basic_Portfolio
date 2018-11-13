@@ -79,6 +79,16 @@ body {
     margin-bottom: 0;
 }
 
+/* MSGSUBMIT ID */
+#msgsubmit {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 30px;
+    font-weight: 900;
+    margin-bottom: 0;
+    display: block
+}
+
 /* Main Class */
 .main {
     flex: 1 0 auto;
@@ -111,7 +121,7 @@ body {
 
 /* Contact Form ID */
 #contactform {
-    overflow: hidden;
+    width: 100%;
 }
 
 /* Message Line Class */
