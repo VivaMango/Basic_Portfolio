@@ -14,7 +14,7 @@ html {
 /* Body Tag Call */
 body {
     display: flex;
-    overflow: auto; /* makes body non-scrollable DO NOT FORGET TO MAKE CHILDREN SCROLLABLE */
+    overflow: auto; 
     margin: 0px; /* removes default style */
     height: 100%;
     min-height: 100%;
@@ -41,6 +41,11 @@ body {
     width: 10%;
     padding: 30px;
     display: inline-block;
+    text-align: center;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    margin-bottom: 0;
 }
 
 /* Nav Bar Class */
@@ -49,6 +54,12 @@ body {
     position: relative;
     margin-inline-end: 10%;
     margin-bottom: 0;
+}
+
+.navbar a:last-child {
+    border-width: 1px;
+    border-right-style: solid;
+    border-right-color: black;
 }
 
 /* NavActive Class */
@@ -60,6 +71,10 @@ body {
     font-weight: 900;
     margin-bottom: 0;
     display: inline-block;
+    text-align: center;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
 }
 
 /* Nav Property ID */
@@ -83,7 +98,7 @@ body {
 #msgsubmit {
     background-color: #4aaaa5;
     color: white;
-    padding: 30px;
+    padding: 20px;
     font-weight: 900;
     margin-bottom: 0;
     display: block
