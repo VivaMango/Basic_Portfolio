@@ -23,6 +23,7 @@ body {
     flex-shrink: 0;
 }
 
+
 /* <Header> Class */
 .tagheader {
     flex: 0 0 auto;
@@ -40,7 +41,6 @@ body {
     float: right;
     width: 10%;
     padding: 30px;
-    display: inline-block;
     text-align: center;
     border-left-color: black;
     border-left-style: solid;
@@ -50,10 +50,11 @@ body {
 
 /* Nav Bar Class */
 .navbar {
-    float: right;
-    position: relative;
     margin-inline-end: 10%;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Removes Bullet Points from Nav Bar <ul> */
+    display: inline;
 }
 
 .navbar a:last-child {
@@ -64,13 +65,13 @@ body {
 
 /* NavActive Class */
 .navactive {
+    width: 10%;
     background-color: #4aaaa5;
     color: white;
     padding: 30px;
     float: right;
     font-weight: 900;
     margin-bottom: 0;
-    display: inline-block;
     text-align: center;
     border-left-color: black;
     border-left-style: solid;
@@ -87,11 +88,12 @@ body {
 .info_header {
     background-color: #4aaaa5;
     color: white;
-    float: left;
     padding: 30px;
     margin-inline-start: 10%;
+    margin-right: 40%;
     font-weight: 300%;
     margin-bottom: 0;
+    position: absolute;
 }
 
 /* MSGSUBMIT ID */
@@ -124,6 +126,13 @@ body {
     color: #4aaaa5;
     padding: 0px 0px 20px 0px;
     border-width: 0px 0px 3px 0px;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 /* Headshot Photo ID */

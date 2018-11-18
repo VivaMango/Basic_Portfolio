@@ -19,6 +19,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- External Asset Links -->
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <!-- Our Stylesheet -->
         <link rel="stylesheet" href="assets/css/style.css">
 
 
@@ -39,47 +42,49 @@
             <div
                 id="navbarproperties"
             >
-            
-                <!-- Portfolio Name Header -->
-                <div 
-                    id="myname"
-                    class="info_header"
-                    style="font-family: 'Georgia', Times, Times New Roman, serif;" 
-                >Aaron "Alex" Schwartz
-                </div>
-
                 <!-- Navigation Bar Container -->
                 
-                <div
+                <ul 
                     id="navbar"
                     class="navbar"
                 >
+
+                    <!-- Nav Bar Name Header -->
+                    <li 
+                        id="myname"
+                        class="info_header"
+                        style="font-family: 'Georgia', Times, Times New Roman, serif;" 
+                    >Aaron "Alex" Schwartz
+                    </li>
+
                     <!-- Link_Active for index.html -->
-                    <a
+                    <li><a
                         href="index.html"
+                        id="linkindex"
                         class="navactive"
+                        title="Click this link to learn more about Alex"
                     >About
-                    </a>
+                    </a></li>
 
                     <!-- Link to contact.html -->
-                    <a 
+                    <li><a 
                         href="contact.html" 
                         id="linkcontact" 
                         class="navlink" 
                         title="Click this link to contact Alex"
                         
                     >Contact Alex
-                    </a>
+                    </a></li>
 
                     <!-- Link to portfolio.html -->
-                    <a 
+                    <li><a 
                         href="portfolio.html" 
                         id="linkportfolio" 
                         class="navlink" 
                         title="Click this link to see Alex&apos;s Portfolio Gallery"
                     >Alex&apos;s Portfolio
-                    </a>
-                </div>
+                    </a></li>
+                </ul>
             </div>
         </header>
 
