@@ -171,6 +171,10 @@ body {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
+.galleryimg {
+    padding: 10px;
+}
+
 /* Headshot Photo ID */
 #headshot {
     float: left;
