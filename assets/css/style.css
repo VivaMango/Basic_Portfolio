@@ -18,7 +18,9 @@ body {
     margin: 0px; /* removes default style */
     height: 100%;
     min-height: 100%;
-    background-color: lime;
+    background-image: url("../images/alwaysgrey.png");
+    background-repeat: repeat;
+    background-color: #e6e6e6;
     flex-direction: column;
     flex-shrink: 0;
 }
@@ -30,7 +32,7 @@ body {
     margin: 0px;
     background-color: white;
     border-style: solid;
-    border-color: orange;
+    border-color: #cccccc;
     border-width: 0px 0px 3px 0px;
 }
 
@@ -43,7 +45,7 @@ body {
     padding: 30px;
     text-align: center;
     font-weight: 600;
-    border-left-color: orange;
+    border-left-color: #cccccc;
     border-left-style: solid;
     border-left-width: 1px;
     margin-bottom: 0;
@@ -56,10 +58,14 @@ body {
     padding: 0;
     list-style-type: none; /* Removes Bullet Points from Nav Bar <ul> */
     display: inline;
+    white-space: nowrap; /* Prevents nav button text from wrapping on smaller screens */
+    text-overflow: hidden; /* Hides overflow text on nav buttons with ellipsis */
 }
 
+/* When hovering a link on NavBar, change background-color to alternate */
+
 .navbar a:hover {
-    background-color: orange;
+    background-color: #cccccc;
 }
 
 /* NavActive Class */
@@ -72,9 +78,13 @@ body {
     font-weight: 999;
     margin-bottom: 0;
     text-align: center;
-    border-left-color: black;
+    /* Active button border styling */
+    border-left-color: #e6e6e6;
     border-left-style: solid;
     border-left-width: 1px;
+    border-right-color: #e6e6e6;
+    border-right-style: solid;
+    border-right-width: 1px;
 }
 
 /* Nav Property ID */
@@ -84,7 +94,7 @@ body {
 }
 
 
-
+/* Removes the border on the far left navlink for styling purposes */
 #linkportfolio {
     border-left-width: 0px;
 }
@@ -111,6 +121,11 @@ body {
     display: block
 }
 
+/* Changes color of MSGSUBMIT button when hovered */
+#msgsubmit:hover {
+    background-color: #cccccc;
+}
+
 /* Main Class */
 .main {
     flex: 1 0 auto;
@@ -127,7 +142,7 @@ body {
 /* H2 ID */
 .header2 {
     border-style: solid;
-    border-color: orange;
+    border-color: #cccccc;
     color: #4aaaa5;
     padding: 0px 0px 20px 0px;
     border-width: 0px 0px 3px 0px;
