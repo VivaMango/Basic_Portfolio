@@ -44,11 +44,12 @@ body {
     width: 10%;
     padding: 30px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     border-left-color: #cccccc;
     border-left-style: solid;
     border-left-width: 1px;
     margin-bottom: 0;
+    text-decoration: none; /* Removes Link Underline Styling */
 }
 
 /* Nav Bar Class */
@@ -60,6 +61,7 @@ body {
     display: inline;
     white-space: nowrap; /* Prevents nav button text from wrapping on smaller screens */
     text-overflow: hidden; /* Hides overflow text on nav buttons NOTWORKING? */
+    font-size: 15px;
 }
 
 /* When hovering a link on NavBar, change background-color to alternate */
@@ -75,7 +77,7 @@ body {
     color: white;
     padding: 30px;
     float: right;
-    font-weight: 999;
+    font-weight: 700;
     margin-bottom: 0;
     text-align: center;
     /* Active button border styling */
@@ -85,6 +87,7 @@ body {
     border-right-color: #e6e6e6;
     border-right-style: solid;
     border-right-width: 1px;
+    text-decoration: none; /* Removes Link Underline Styling */
 }
 
 /* Nav Property ID */
@@ -94,19 +97,26 @@ body {
 }
 
 
-/* Removes the border on the far left navlink for styling purposes */
+/* Removes the border on the far left Navlink for styling purposes */
 #linkindex {
     border-left-width: 0px;
 }
+
+/* Adds margin on far right Navlink */
+#linkcontact {
+    margin-inline-end: 10%;
+}
+
 
 /* Info Header Class */
 .info_header {
     background-color: #4aaaa5;
     color: white;
-    padding: 30px;
+    padding: 28.5px;
     margin-inline-start: 10%;
     margin-right: 40%;
-    font-weight: 300%;
+    font-weight: 900;
+    font-size: 18px;
     margin-bottom: 0;
     position: absolute;
 }
@@ -181,11 +191,6 @@ body {
     width: 100%;
     height: 350px;
     display: block;
-}
-
-/* About Link ID */
-#linkcontact {
-    margin-inline-end: 10%;
 }
 
 
