@@ -33,7 +33,7 @@ body {
     background-color: white;
     border-style: solid;
     border-color: #cccccc;
-    border-width: 0px 0px 3px 0px;
+    border-width: 0px 0px 3px 0px; /* Bottom Edge Border */
 }
 
 /* Nav Link Class */
@@ -59,7 +59,7 @@ body {
     list-style-type: none; /* Removes Bullet Points from Nav Bar <ul> */
     display: inline;
     white-space: nowrap; /* Prevents nav button text from wrapping on smaller screens */
-    text-overflow: hidden; /* Hides overflow text on nav buttons with ellipsis */
+    text-overflow: hidden; /* Hides overflow text on nav buttons NOTWORKING? */
 }
 
 /* When hovering a link on NavBar, change background-color to alternate */
@@ -95,7 +95,7 @@ body {
 
 
 /* Removes the border on the far left navlink for styling purposes */
-#linkportfolio {
+#linkindex {
     border-left-width: 0px;
 }
 
@@ -161,6 +161,8 @@ body {
     margin: 30px;
     height: 15%;
     width: 15%;
+    min-width: 180px;
+    min-height: 235px;
 }
 
 /* Contact Form ID */
@@ -182,7 +184,7 @@ body {
 }
 
 /* About Link ID */
-#linkindex {
+#linkcontact {
     margin-inline-end: 10%;
 }
 
