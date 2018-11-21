@@ -204,14 +204,18 @@ body {
     display: block;
 }
 
-.galcontent {
-    float: left;
+.gallerycontent {
+    content: "";
+    clear: both;
+    display: table;
 }
 
+
 .galstyle {
-    position: relative;
     text-align: center;
     color: white;
+    position: relative;
+    display: inline-block;
 }
 
 .galtext {
