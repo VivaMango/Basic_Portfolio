@@ -204,6 +204,25 @@ body {
     display: block;
 }
 
+.galcontent {
+    float: left;
+}
+
+.galstyle {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.galtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4aaaa5;
+    padding: 6px;
+}
+
 
 /* Sticky Footer Class */
 .footer {
